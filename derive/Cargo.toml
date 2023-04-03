@@ -1,0 +1,23 @@
+[package]
+name = "crdts_macro_derive"
+description = "CRDTs proc_macro"
+version = "7.3.0"
+authors = ["JLer <jlerxky@live.com>"]
+license = "Apache-2.0"
+homepage = "https://github.com/JLerxky/crdts_macro"
+repository = "https://github.com/JLerxky/crdts_macro"
+keywords = ["crdt", "crdts", "proc_macro"]
+edition = "2021"
+resolver = "2"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "2.0"
+quote = "1.0"
+proc-macro2 = "1.0"
+convert_case = "0.6"
+
+[profile.release]
+debug = true
